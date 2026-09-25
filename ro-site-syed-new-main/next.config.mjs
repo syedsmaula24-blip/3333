@@ -1,17 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  devIndicators: {
-    appIsrStatus: false,
-    buildActivity: false,
-  },
-  allowedDevOrigins: [
-    'ais-dev-abmeh3yb627htbk7uvaams-159400676689.asia-east1.run.app',
-    'ais-pre-abmeh3yb627htbk7uvaams-159400676689.asia-east1.run.app',
-    '**.run.app',
-    '**.asia-east1.run.app',
-  ],
+
+  output: 'export',
+  trailingSlash: true,
+
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'https',
